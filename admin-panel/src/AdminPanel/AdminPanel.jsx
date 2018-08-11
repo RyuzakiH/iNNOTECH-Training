@@ -1,17 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Employees from './Employees/Employees';
 import Login from './Login/Login';
 import EmployeesApi from './Employees/EmployeesApi';
 
-class AdminPanel extends Component {
+class AdminPanel extends React.Component {
 
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            loggedIn: false,
-            employees: []
-        }
+    state = {
+        loggedIn: false,
+        employees: []
     }
 
     loginSuccessHandler = (e) => this.setState({ loggedIn: true });
