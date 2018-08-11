@@ -3,20 +3,19 @@ import utils from '../../utils'
 import './Login.css'
 
 const Login = (props) => {
-
-    let onLoginHandler = (e) => {
-
-        e.preventDefault();
-
-        if (utils.isObject(props.db.find(emp =>
-            emp.userName.toLowerCase() === e.target.elements.username.value.toLowerCase() &&
-            emp.password.toLowerCase() === e.target.elements.password.value.toLowerCase())))
-            props.onLoginSuccess();
-    }
-
     return (
         <div className="login-form">
-            <form className="form-horizontal" onSubmit={onLoginHandler}>
+            <form
+                className="form-horizontal"
+                onSubmit={(e) => {
+                    e.preventDefault();
+
+                    if (utils.isObject(props.db.find(emp =>
+                        emp.userName.toLowerCase() === e.target.elements.username.value.toLowerCase() &&
+                        emp.password.toLowerCase() === e.target.elements.password.value.toLowerCase())))
+                        props.onLoginSuccess();
+                }}
+            >
                 <div className="form-group">
                     <div className="input-group">
                         <span className="input-group-addon">
