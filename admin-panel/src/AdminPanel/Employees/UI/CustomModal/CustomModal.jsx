@@ -5,16 +5,9 @@ import utils from '../../../../utils'
 
 class CustomModal extends React.Component {
 
-    constructor(props, context) {
-        super(props, context);
-
-        this.handleShow = this.handleShow.bind(this);
-        this.handleHide = this.handleHide.bind(this);
-
-        this.state = {
-            show: false
-        };
-    }
+    state = {
+        show: false
+    };
 
     handleShow = () => this.setState({ show: true });
 
