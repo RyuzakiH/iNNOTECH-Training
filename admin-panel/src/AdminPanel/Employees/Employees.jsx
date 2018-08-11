@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import './Employees.css'
+import React from 'react'
 import AddFormModal from './Modals/AddFormModal'
 import EmployeesApi from './EmployeesApi'
 import Table from './Table/Table';
 import { InputTypes } from './UI/Form/Form'
+import './Employees.css'
 
-class Employees extends Component {
+class Employees extends React.Component {
 
     constructor() {
         super();
@@ -39,7 +39,6 @@ class Employees extends Component {
 
 
     render() {
-
         return (
             <div className="Employees">
                 <div id="main">
