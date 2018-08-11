@@ -19,7 +19,9 @@ const formModal = (props) => {
                 id={props.formId}
                 onSubmit={props.onSubmit}
                 formElements={props.formElements}
-                data={props.data} />
+                data={props.data}
+                submitButton={false}
+            />
         </CustomModal>
     );
 };
