@@ -8,7 +8,10 @@ const input = (props) => {
     return (
         <div className="form-group">
             <div className="col-sm-1"></div>
-            <label className={"control-label " + props.labelClassName}>{props.label}</label>
+            {
+                props.label ?
+                    <label className={"control-label " + props.labelClassName}>{props.label}</label> : null
+            }
             <div className={props.inputClassName}>
                 <input className="form-control" {...domProps} />
             </div>
