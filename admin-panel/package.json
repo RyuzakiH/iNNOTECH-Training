@@ -1,15 +1,13 @@
 {
-  "name": "to-do-list",
+  "name": "react-zero-guide",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
-    "eslint": "^5.2.0",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",
-    "react-bootstrap-table-next": "^0.1.15",
+    "react-bootstrap-table-next": "^1.0.0",
     "react-dom": "^16.4.1",
-    "react-modal": "^3.5.1",
     "react-scripts": "1.1.4"
   },
   "scripts": {
@@ -17,14 +15,5 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "eslint-config-standard": "^11.0.0",
-    "eslint-config-standard-react": "^6.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-react": "^7.10.0",
-    "eslint-plugin-standard": "^3.1.0"
   }
 }
