@@ -2,7 +2,7 @@ import React from 'react';
 import utils from '../../utils'
 import './Login.css'
 
-const Login = (props) => {
+const login = (props) => {
     return (
         <div className="login-form">
             <form
@@ -40,4 +40,4 @@ const Login = (props) => {
     )
 };
 
-export default Login;
+export default login;
