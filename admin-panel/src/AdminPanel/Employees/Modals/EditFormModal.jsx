@@ -28,13 +28,3 @@ const editFormModal = (props) => {
 };
 
 export default editFormModal;
-
-
-
-
-
-// const element = Object.assign(tempTemplate[0], {});
-// console.log(element);
-// element.readOnly = true;
-// console.log(element);
-// tempTemplate[0] = element;
