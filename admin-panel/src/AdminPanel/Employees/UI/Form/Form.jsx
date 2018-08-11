@@ -4,7 +4,7 @@ import utils from '../../../../utils'
 
 const form = (props) => {
 
-    const domProps = utils.filterObjectByKeys(props, ['data', 'onSubmit', 'formElements', 'callback']);
+    const domProps = utils.filterObjectByKeys(props, ['data', 'onSubmit', 'formElements', 'callback', 'submitButton']);
 
     return (
         <form
@@ -37,6 +37,14 @@ const form = (props) => {
                     />
                 )
             }
+            {
+                props.submitButton ?
+                    <Input
+                        type="submit"
+                        className={props.submitButtonClassName}
+                        value={props.submitButtonText}
+                    /> : null
+            }
         </form>
     );
 }
@@ -44,3 +52,39 @@ const form = (props) => {
 export default form;
 
 export { InputTypes };
+
+
+
+// TODO
+// class FormElement {
+
+//     constructor() {
+//         this.type = 'input';
+//         this.config = {
+//             type: 'text',
+//             placeholder: 'Your Name'
+//         };
+//         this.value = '';
+//         this.validation = {
+//             required: true
+//         }
+//         this.valid = false;
+//         this.touched = false
+//     }
+// }
+
+
+// const FormElements = Object.freeze({
+//     INPUT: "input",
+//     TEXTAREA: "textarea",
+//     LABEL: "label",
+//     FIELDSET: "fieldset",
+//     LEGEND: "legend",
+//     SELECT: "select",
+//     OPTGROUP: "optgroup",
+//     OPTION: "option",
+//     BUTTON: "button",
+//     DATALIST: "datalist",
+//     OUTPUT: "output"
+// });
+
