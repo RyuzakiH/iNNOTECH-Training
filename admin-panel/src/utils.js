@@ -41,22 +41,6 @@ let makeEnum = (arr) => {
 
 
 
-// let extractDefaultColumnsFromData = () =>
-//     (this.props.data && this.props.data.length > 0) ? Object.keys(this.props.data[0]) : undefined;
-
-
-// let generateFormTemplateFromData = (data) =>
-//     Object.keys((data && data.length > 0) ? data[0] : []).map(name => {
-//         return {
-//             name: name,
-//             type: 'text',
-//             readOnly: false,
-//             required: true
-//         }
-//     });
-
-
-
 export default {
     isFunction,
     isObject,
