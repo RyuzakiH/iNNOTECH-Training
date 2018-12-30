@@ -1,0 +1,16 @@
+/* Style the header */
+
+.TodoList .header {
+    background-color: #2e2c2c;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+/* Clear floats after the header */
+
+.TodoList .header:after {
+    content: "";
+    display: table;
+    clear: both;
+}

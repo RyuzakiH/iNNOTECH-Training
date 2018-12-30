@@ -1,0 +1,4 @@
+.movieStore .react-bs-table-sizePerPage-dropdown {
+    display: none !important;
+    visibility: hidden !important;
+}

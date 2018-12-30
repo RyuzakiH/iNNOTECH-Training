@@ -1,0 +1,36 @@
+.panel-body h3 {
+    float: left;
+    margin-top: 6px;
+}
+
+.panel-body #btnUpdate {
+    float: right;
+    margin-bottom: 8px;
+    margin-left: 5px;
+}
+
+.panel-body hr {
+    clear: left;
+    clear: right;
+}
+
+.Employees {
+    transition: margin-left .5s;
+    padding: 30px;
+}
+
+#tblEmployees td,
+#tblEmployees th {
+    text-align: center;
+}
+
+.panel-body #tblEmployees th {
+    cursor: pointer;
+    /* color: black; */
+}
+
+/* Test */
+
+.pagination.react-bootstrap-table-page-btns-ul {
+    float: right;
+}
